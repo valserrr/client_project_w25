@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Page 2</title>
+    <title>First Generation</title>
 </head>
 <body>
     
@@ -69,9 +69,11 @@
 
     </main>
     <footer>
-        <p>The University of Michigan | <a href="https://firstgen.umich.edu/">First Generation </a></p>
+        <p>&copy; <span id="year"></span> The University of Michigan | <a href="https://firstgen.umich.edu/">First Generation </a></p>
     </footer>
-    
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

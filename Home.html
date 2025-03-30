@@ -101,7 +101,10 @@
         UMGPT. (2025). UMGPT (August 29th version) [Large language model]. -->
     </main>
     <footer>
-        <p>BSI Academic Advising | <a href="https://sites.google.com/umich.edu/bsiacademicadvising/home">UMSI Academic Advising </a></p>
-        </footer>
+        <p>&copy; <span id="year"></span> BSI Academic Advising | <a href="https://sites.google.com/umich.edu/bsiacademicadvising/home">UMSI Academic Advising </a></p>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

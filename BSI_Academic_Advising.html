@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Page 1</title>
+    <title>BSI Academic Advising</title>
 </head>
 <body>
 
@@ -104,9 +104,11 @@
 
     </main>
     <footer>
-        <p>UMSI Academic Advising | <a href="https://sites.google.com/umich.edu/bsiacademicadvising/student-support-resources">Student Support Resources </a></p>
+        <p>&copy; <span id="year"></span> UMSI Academic Advising | <a href="https://sites.google.com/umich.edu/bsiacademicadvising/student-support-resources">Student Support Resources </a></p>
     </footer>
-    
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
