@@ -31,7 +31,7 @@ a:hover {
     z-index: 1;
 }
 .skip a:focus{
-    top: -20px;
+    top: 0;
     border: 2xp solid black;
 }
 header {
@@ -72,6 +72,7 @@ nav ul li a:hover {
 }
 .container {
     display: grid;
+    align-content: center;
     gap: 3%;
     padding: 10%;
 }
@@ -100,4 +101,75 @@ footer {
 }
 footer a {
     color: #ffcc00;
+}
+@media(min-width: 768px){
+    header{
+        grid-template-columns: 1fr;
+        padding: 5%;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    nav ul{
+        grid-template-columns: repeat(3,1fr); 
+    }
+    /* repeat allows for no repeatation of the same lines, like a shotcut for not writng same code */
+    .container{
+        grid-template-columns: 1fr 3fr 1fr;
+        padding: 5%;
+    }
+    section{
+        padding: 3%;
+        max-width: 80%;
+        margin: auto;
+    }
+    footer{
+        grid-template-columns: 1fr 1fr;
+        padding: 3%;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px){
+    header{
+        grid-template-columns: 1fr;
+        padding: 3%;
+    }
+    nav{
+        grid-template-columns: 1fr;
+    }
+    nav ul{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .container{
+        grid-template-columns: 1fr 4fr 1fr;
+        padding: 3%;
+        max-width: 1200px;
+        margin: auto;
+    }
+    section{
+        max-width: 70%;
+        padding: 2%;
+    }
+    footer{
+        grid-template-columns: 1fr 2fr;
+        padding: 2%;
+    }
+}
+/* Challenging element, which is unqiue for my site */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 0.8s ease-out;
 }
