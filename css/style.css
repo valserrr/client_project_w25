@@ -14,7 +14,7 @@ img {
 }
 a {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 a:hover {
     text-decoration: underline;
@@ -22,13 +22,14 @@ a:hover {
 .skip a{
     position: absolute;
     top: -40px;
-    background: grey;
     left: 0;
     right: 0;
+    background: grey;
     padding: 6px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
-    z-index: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: top 0.3s ease-out;
+    z-index: 100;
 }
 .skip a:focus{
     top: 0;
@@ -94,13 +95,13 @@ figcaption {
     color: #323030;
 }
 footer {
-    background-color: #00457c;
+    background-color: #00274c;
     color: #fff;
     text-align: center;
     padding: 2%;
 }
 footer a {
-    color: #ffcc00;
+    color: #FFCB05;
 }
 @media(min-width: 768px){
     header{
@@ -172,4 +173,7 @@ footer a {
 
 section {
     animation: fadeIn 0.8s ease-out;
+}
+html {
+    scroll-behavior: smooth;
 }
