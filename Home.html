@@ -15,7 +15,7 @@
   <!-- <a href ="#content">Skip to Main Content</a> -->
   <!-- <div class="skip"><a href="">Skip to Main Content</a></div> -->
   <header>
-    <div class="skip"><a href="">Skip to Main Content</a></div>
+    <div class="skip"><a href="#main" id="skip-link">Skip to Main Content</a></div>
     <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
@@ -29,7 +29,7 @@
   </header>
   
     
-    <main class="container" id = "main">
+    <main class="container" id="main" tabindex="-1">
         <section>
             <h2>Welcome to the UMSI undergraduate Success Navigator</h2>
             <p> Your Comprehensive Guide to Resources for undergraduate School Success</p>
@@ -106,5 +106,6 @@
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
+    <script src="javascript.js"></script>
 </body>
 </html>
